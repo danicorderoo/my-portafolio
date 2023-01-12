@@ -1,0 +1,38 @@
+.menu {
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  position: fixed;
+  z-index: 60;
+  padding: 10px;
+  left: 0;
+  bottom: 32%;
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-radius: 3em;
+  backdrop-filter: blur(15px);
+}
+
+.link {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.link:hover {
+  background: var(--color-primary-variant);
+}
+
+.navActivety {
+  background: var(--color-primary);
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: #fff;
+  font-size: 1.5rem;
+}

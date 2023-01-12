@@ -1,0 +1,173 @@
+.experience__container {
+  display: flex;
+  position: fixed;
+  left: 10%;
+  top: 15%;
+  gap: 4em;
+  color: white;
+  animation-name: aparece_cubo;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+.experience__frontend:hover {
+  animation-name: flota;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  box-shadow: 0px 0px 50px black;
+}
+
+.experience__frontend {
+  transition: var(--transition);
+}
+
+.experience__backend {
+  transition: var(--transition);
+}
+
+.experience__backend:hover {
+  animation-name: flota;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  box-shadow: 0px 0px 50px black;
+}
+
+.experience__container > div {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.experience__container > div:hover {
+  background: var(--color-primary);
+  border-color: white;
+  cursor: default;
+}
+
+.experience__container > div > h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-white);
+}
+
+.experience__container > div > h4 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.experience__details {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__details_icons {
+  margin-top: 10px;
+  color: var(--color-primary-variant);
+}
+
+.text_ligth {
+  color: var(--color-light);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  position: fixed;
+  top: 15%;
+  right: 2%;
+}
+
+.cubo1 {
+  animation-name: aparece_cubo;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+.cubo2 {
+  animation-name: aparece_cubo;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+.cubo3 {
+  animation-name: aparece_cubo;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+.mensaje {
+  position: absolute;
+  z-index: -1;
+  top: 45%;
+  left: 0;
+  right: 0;
+  color: white;
+  animation-name: aparece_mensaje;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes aparece_mensaje {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes aparece_cubo {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes flota {
+  0% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,29 @@
+.swiper {
+  width: 130px;
+  height: 130px;
+  animation-name: flota;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.swiper-slide {
+  background-position: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 130px;
+}
+
+@keyframes flota {
+  0% {
+    transform: translateX(-15px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

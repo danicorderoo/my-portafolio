@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mensaje {
+  position: absolute;
+  z-index: -1;
+  top: 45%;
+  left: 0;
+  right: 0;
+  color: white;
+  animation-name: aparece_mensaje;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes aparece_mensaje {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
