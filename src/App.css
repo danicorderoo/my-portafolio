@@ -23,6 +23,7 @@ body {
   position: fixed;
   height: 100%;
   width: 100%;
+
   background: rgb(2, 0, 36);
   background: linear-gradient(
     0deg,

@@ -13,7 +13,7 @@ container {
   margin: auto;
   height: 200px;
   width: 200px;
-  background-image: url("../../assets/icons/boton-de-play-white.png");
+  background-image: url("../../assets/icons/boton-de-play.png");
   background-position: center;
   background-size: 100%;
   animation-name: gira_movie;
