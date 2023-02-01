@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import CV from "../../assets/icons/menu.png";
+import CV from "../../assets/CV/CV-Daniel Cordero-v1.pdf";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";

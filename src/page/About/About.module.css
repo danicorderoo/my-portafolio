@@ -1,16 +1,16 @@
 .experience__container {
   display: flex;
-  position: fixed;
+  position: absolute;
+  flex-wrap: wrap;
   left: 10%;
   top: 15%;
-  gap: 4em;
+  gap: 3em;
   color: white;
   animation-name: aparece_cubo;
   animation-delay: 2s;
   animation-duration: 0.5s;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   animation-fill-mode: both;
-  cursor: pointer;
 }
 
 .experience__frontend:hover {
@@ -43,7 +43,7 @@
 
 .experience__container > div {
   background: rgba(0, 0, 0, 0.3);
-  padding: 2.4rem 5rem;
+  padding: 2.5rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);

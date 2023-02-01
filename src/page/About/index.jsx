@@ -11,70 +11,132 @@ export default function About(props) {
     <div>
       <div className={styles.experience__container}>
         <div className={styles.experience__frontend}>
-          <h3>Frontend Development</h3>
+          {idiom ? (
+            <h3>Frontend Development</h3>
+          ) : (
+            <h3>Desarrollador Frontend</h3>
+          )}
 
           <div className={styles.experience__content}>
             <article className={styles.experience__details}>
               <BsPatchCheckFill className={styles.experience__details_icons} />
               <div>
-                <h4>HTML</h4>
-                <small className={styles.text_light}>Experienced</small>
+                <h1>HTML</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Experienced</small>
+                ) : (
+                  <small className={styles.text_light}>Experimentado</small>
+                )}
               </div>
             </article>
 
             <article className={styles.experience__details}>
               <BsPatchCheckFill className={styles.experience__details_icons} />
               <div>
-                <h4>CSS</h4>
-                <small className={styles.text_light}>Intermediate</small>
+                <h1>CSS</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Experienced</small>
+                ) : (
+                  <small className={styles.text_light}>Experimentado</small>
+                )}
               </div>
             </article>
             <article className={styles.experience__details}>
               <BsPatchCheckFill className={styles.experience__details_icons} />
               <div>
-                <h4>JavaScript</h4>
-                <small className={styles.text_light}>Intermediate</small>
+                <h1>JavaScript</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Intermediate</small>
+                ) : (
+                  <small className={styles.text_light}>Intermedio</small>
+                )}
               </div>
             </article>
             <article className={styles.experience__details}>
               <BsPatchCheckFill className={styles.experience__details_icons} />
               <div>
-                <h4>Bootstrap</h4>
-                <small className={styles.text_light}>Experienced</small>
+                <h1>React</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Experienced</small>
+                ) : (
+                  <small className={styles.text_light}>Experimentado</small>
+                )}
               </div>
             </article>
             <article className={styles.experience__details}>
               <BsPatchCheckFill className={styles.experience__details_icons} />
               <div>
-                <h4>React</h4>
-                <small className={styles.text_light}>Intermediate</small>
+                <h1>Bootstrap</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Basic</small>
+                ) : (
+                  <small className={styles.text_light}>Básico</small>
+                )}
+              </div>
+            </article>
+            <article className={styles.experience__details}>
+              <BsPatchCheckFill className={styles.experience__details_icons} />
+              <div>
+                <h1>Figma</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Basic</small>
+                ) : (
+                  <small className={styles.text_light}>Básico</small>
+                )}
               </div>
             </article>
           </div>
         </div>
 
         <div className={styles.experience__backend}>
-          <h3>Backend Development</h3>
+          {idiom ? (
+            <h3>Backend Development</h3>
+          ) : (
+            <h3>Desarrollador Backend</h3>
+          )}
           <div className={styles.experience__content}>
             <article className={styles.experience__details}>
               <BsPatchCheckFill className={styles.experience__details_icons} />
               <div>
-                <h1>Java</h1>
-                <small className={styles.text_light}>Experienced</small>
+                <h1>JavaScript</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Intermediate</small>
+                ) : (
+                  <small className={styles.text_light}>Intermedio</small>
+                )}
               </div>
             </article>
             <article className={styles.experience__details}>
               <BsPatchCheckFill className={styles.experience__details_icons} />
               <div>
-                <h1>MySQL</h1>
-                <small className={styles.text_light}>Intermediate</small>
+                <h1>Node.js</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Intermediate</small>
+                ) : (
+                  <small className={styles.text_light}>Intermedio</small>
+                )}
               </div>
             </article>
             <article className={styles.experience__details}>
               <BsPatchCheckFill className={styles.experience__details_icons} />
               <div>
-                <h1>Python</h1>
-                <small className={styles.text_light}>Basic</small>
+                <h1>PostgreSQL</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Intermediate</small>
+                ) : (
+                  <small className={styles.text_light}>Intermedio</small>
+                )}
+              </div>
+            </article>
+            <article className={styles.experience__details}>
+              <BsPatchCheckFill className={styles.experience__details_icons} />
+              <div>
+                <h1>Sequelize</h1>
+                {idiom ? (
+                  <small className={styles.text_light}>Intermediate</small>
+                ) : (
+                  <small className={styles.text_light}>Intermedio</small>
+                )}
               </div>
             </article>
           </div>

@@ -12,6 +12,8 @@ export default function Reproductor(props) {
         width="100%"
         height="100%"
         playing
+        controls
+        volume={50}
         onEnded={() => {
           navigate("/");
         }}
