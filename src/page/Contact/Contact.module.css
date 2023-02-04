@@ -20,6 +20,122 @@
   animation-fill-mode: both;
 }
 
+.contact__container {
+  width: 40%;
+  display: flex;
+  gap: 5%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  animation-name: aparece_container1;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: both;
+}
+.contact__option {
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.contact__option:hover {
+  background: var(--color-primary);
+}
+.contact__option_icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  padding: 1em;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background: var(--color-primary);
+  transition: all 1s;
+}
+
+.contact__option:hover a {
+  transition: all 1s;
+  background: var(--color-primary-variant);
+}
+
+.main {
+  display: flex;
+  gap: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: white;
+}
+
+.containerForm {
+  animation-name: aparece_container2;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: both;
+}
+
+.photo {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  height: 280px;
+  width: 280px;
+  background-image: url("../../assets/image/me.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: aparece_foto;
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: both;
+}
+
+.botton {
+  padding: 1em;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background: var(--color-primary);
+  transition: all 1s;
+  border-color: transparent;
+}
+
+.botton:hover {
+  transition: all 1s;
+  cursor: pointer;
+  background: var(--color-primary-variant);
+}
+
 @keyframes aparece_mensaje {
   0% {
     opacity: 0;
@@ -31,5 +147,41 @@
   100% {
     opacity: 0;
     transform: scale(1.2);
+  }
+}
+
+@keyframes aparece_container1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aparece_container2 {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aparece_foto {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

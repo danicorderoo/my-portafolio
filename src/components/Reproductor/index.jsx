@@ -8,7 +8,7 @@ export default function Reproductor(props) {
   return (
     <div className={styles.container}>
       <ReactPlayer
-        url="https://youtu.be/fuTZaZbjXlU"
+        url="https://youtu.be/0AQGMFarxMw"
         width="100%"
         height="100%"
         playing

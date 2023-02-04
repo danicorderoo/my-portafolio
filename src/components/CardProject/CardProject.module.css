@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2.5rem 0 0 0;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.botton {
+  position: absolute;
+  border-radius: 2rem;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 5em;
+  color: #000000a8;
+  transition: all 1s;
+}
+
+.botton:hover {
+  transition: all 1s;
+  color: var(--color-primary-variant);
+}
+
+.texto {
+  text-align: center;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}

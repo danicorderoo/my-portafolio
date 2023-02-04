@@ -54,12 +54,14 @@ span {
   position: fixed;
   z-index: 0;
   bottom: 0;
+  margin-bottom: 20px;
   color: white;
-  animation-name: aparece_movie;
+  animation-name: aparece_triangulo;
   animation-delay: 4s;
-  animation-duration: 0.5s;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-fill-mode: both;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
   transition-duration: 1s;
 }
 
